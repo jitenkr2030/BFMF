@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9933;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#138808;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#faviconGrad)"/>
+  <circle cx="16" cy="16" r="13" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Simplified Ashoka Chakra -->
+  <g>
+    <circle cx="16" cy="16" r="8" fill="none" stroke="#000080" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="1.5" fill="#000080"/>
+    <line x1="16" y1="8" x2="16" y2="11" stroke="#000080" stroke-width="1"/>
+    <line x1="16" y1="21" x2="16" y2="24" stroke="#000080" stroke-width="1"/>
+    <line x1="8" y1="16" x2="11" y2="16" stroke="#000080" stroke-width="1"/>
+    <line x1="21" y1="16" x2="24" y2="16" stroke="#000080" stroke-width="1"/>
+  </g>
+  
+  <!-- AI Core dots -->
+  <circle cx="16" cy="16" r="3" fill="#000080"/>
+  <circle cx="13" cy="13" r="1" fill="#000080"/>
+  <circle cx="19" cy="13" r="1" fill="#000080"/>
+  <circle cx="13" cy="19" r="1" fill="#000080"/>
+  <circle cx="19" cy="19" r="1" fill="#000080"/>
+</svg>

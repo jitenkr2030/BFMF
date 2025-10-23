@@ -1,0 +1,67 @@
+[
+  {
+    "test_type": "system_creation",
+    "success": true,
+    "agents_added": 3,
+    "system_status": {
+      "total_agents": 3,
+      "total_tasks": 0,
+      "completed_tasks": 0,
+      "pending_tasks": 0,
+      "agent_utilization": {
+        "analyst_agent": 0.0,
+        "optimizer_agent": 0.0,
+        "predictor_agent": 0.0
+      }
+    },
+    "error": null
+  },
+  {
+    "test_type": "task_assignment",
+    "success": true,
+    "tasks_submitted": 3,
+    "tasks_completed": 2,
+    "system_status": {
+      "total_agents": 2,
+      "total_tasks": 3,
+      "completed_tasks": 2,
+      "pending_tasks": 1,
+      "agent_utilization": {
+        "analyst_agent": 0.0,
+        "optimizer_agent": 0.0
+      }
+    },
+    "error": null
+  },
+  {
+    "test_type": "capability_matching",
+    "success": true,
+    "success_rate": 1.0,
+    "total_tests": 3,
+    "successful_tests": 3,
+    "results": [
+      {
+        "test_case": "Should assign to specialist analyst",
+        "task_id": "test_task_1",
+        "expected_agent": "analyst_agent",
+        "assigned_agent": "analyst_agent",
+        "success": true
+      },
+      {
+        "test_case": "Should assign to specialist optimizer",
+        "task_id": "test_task_2",
+        "expected_agent": "optimizer_agent",
+        "assigned_agent": "optimizer_agent",
+        "success": true
+      },
+      {
+        "test_case": "Should assign to generalist with both capabilities",
+        "task_id": "test_task_3",
+        "expected_agent": "generalist_agent",
+        "assigned_agent": "generalist_agent",
+        "success": true
+      }
+    ],
+    "error": null
+  }
+]
