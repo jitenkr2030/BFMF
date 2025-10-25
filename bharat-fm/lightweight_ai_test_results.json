@@ -1,0 +1,196 @@
+{
+  "neural_networks": {
+    "General Error": {
+      "status": "failed",
+      "error": "axes don't match array",
+      "timestamp": "2025-10-25T11:16:54.765240"
+    }
+  },
+  "memory_system": {
+    "System Creation": {
+      "status": "success",
+      "creation_time": 7.152557373046875e-05,
+      "config": {
+        "max_memory_entries": 1000,
+        "max_context_length": 2048,
+        "memory_retention_days": 30
+      },
+      "timestamp": "2025-10-25T11:16:54.769970"
+    },
+    "Add Memory 1": {
+      "status": "success",
+      "memory_id": "mem_1761391014770327_0",
+      "test_time": 0.0024509429931640625,
+      "timestamp": "2025-10-25T11:16:54.772526"
+    },
+    "Add Memory 2": {
+      "status": "success",
+      "memory_id": "mem_1761391014772748_1",
+      "test_time": 0.0006916522979736328,
+      "timestamp": "2025-10-25T11:16:54.773325"
+    },
+    "Add Memory 3": {
+      "status": "success",
+      "memory_id": "mem_1761391014773541_2",
+      "test_time": 0.0006010532379150391,
+      "timestamp": "2025-10-25T11:16:54.774039"
+    },
+    "Add Memory 4": {
+      "status": "success",
+      "memory_id": "mem_1761391014774212_3",
+      "test_time": 0.0006568431854248047,
+      "timestamp": "2025-10-25T11:16:54.774773"
+    },
+    "Get Context": {
+      "status": "success",
+      "context_length": 4,
+      "test_time": 5.698204040527344e-05,
+      "timestamp": "2025-10-25T11:16:54.774975"
+    },
+    "Search Memories": {
+      "status": "success",
+      "results_count": 1,
+      "test_time": 0.002153635025024414,
+      "timestamp": "2025-10-25T11:16:54.777250"
+    },
+    "User Profile": {
+      "status": "success",
+      "total_memories": 4,
+      "total_sessions": 1,
+      "test_time": 6.008148193359375e-05,
+      "timestamp": "2025-10-25T11:16:54.777516"
+    },
+    "Memory Stats": {
+      "status": "success",
+      "total_memories": 4,
+      "total_sessions": 1,
+      "total_users": 1,
+      "test_time": 5.7220458984375e-05,
+      "timestamp": "2025-10-25T11:16:54.777738"
+    }
+  },
+  "text_processing": {
+    "Processor Creation": {
+      "status": "success",
+      "creation_time": 0.0001823902130126953,
+      "config": {
+        "tokenizer_type": "custom",
+        "max_length": 512,
+        "lowercase": true,
+        "normalize_whitespace": true
+      },
+      "timestamp": "2025-10-25T11:16:54.779145"
+    },
+    "Text Preprocessing 1": {
+      "status": "success",
+      "original_length": 29,
+      "processed_length": 29,
+      "test_time": 7.081031799316406e-05,
+      "timestamp": "2025-10-25T11:16:54.779255"
+    },
+    "Text Preprocessing 2": {
+      "status": "success",
+      "original_length": 32,
+      "processed_length": 32,
+      "test_time": 8.344650268554688e-06,
+      "timestamp": "2025-10-25T11:16:54.779305"
+    },
+    "Text Preprocessing 3": {
+      "status": "success",
+      "original_length": 44,
+      "processed_length": 44,
+      "test_time": 5.7220458984375e-06,
+      "timestamp": "2025-10-25T11:16:54.779344"
+    },
+    "Text Preprocessing 4": {
+      "status": "success",
+      "original_length": 25,
+      "processed_length": 17,
+      "test_time": 4.0531158447265625e-06,
+      "timestamp": "2025-10-25T11:16:54.779400"
+    },
+    "Text Preprocessing 5": {
+      "status": "success",
+      "original_length": 27,
+      "processed_length": 27,
+      "test_time": 4.291534423828125e-06,
+      "timestamp": "2025-10-25T11:16:54.779438"
+    },
+    "Tokenization (custom)": {
+      "status": "success",
+      "test_time": 0.00046515464782714844,
+      "texts_processed": 5,
+      "avg_tokens_per_text": 512.0,
+      "timestamp": "2025-10-25T11:16:54.779930"
+    },
+    "Tokenization (indian)": {
+      "status": "success",
+      "test_time": 0.0004901885986328125,
+      "texts_processed": 5,
+      "avg_tokens_per_text": 512.0,
+      "timestamp": "2025-10-25T11:16:54.780467"
+    },
+    "Tokenization (subword)": {
+      "status": "success",
+      "test_time": 0.0005998611450195312,
+      "texts_processed": 5,
+      "avg_tokens_per_text": 512.0,
+      "timestamp": "2025-10-25T11:16:54.781122"
+    },
+    "Language Detection 1": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 1.0013580322265625e-05,
+      "timestamp": "2025-10-25T11:16:54.781189"
+    },
+    "Language Detection 2": {
+      "status": "success",
+      "detected_language": "hi",
+      "test_time": 5.7220458984375e-06,
+      "timestamp": "2025-10-25T11:16:54.781232"
+    },
+    "Language Detection 3": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 9.059906005859375e-06,
+      "timestamp": "2025-10-25T11:16:54.781272"
+    },
+    "Language Detection 4": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 5.4836273193359375e-06,
+      "timestamp": "2025-10-25T11:16:54.781306"
+    },
+    "Language Detection 5": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 5.9604644775390625e-06,
+      "timestamp": "2025-10-25T11:16:54.781339"
+    },
+    "Tokenizer Info": {
+      "status": "success",
+      "vocabulary_size": 106,
+      "special_tokens_count": 5,
+      "test_time": 1.8358230590820312e-05,
+      "timestamp": "2025-10-25T11:16:54.781408"
+    }
+  },
+  "integration": {
+    "Component Creation": {
+      "status": "success",
+      "creation_time": 0.012642145156860352,
+      "components_created": [
+        "memory_system",
+        "text_processor",
+        "neural_text_processor",
+        "gpt_model"
+      ],
+      "timestamp": "2025-10-25T11:16:54.794151"
+    },
+    "General Error": {
+      "status": "failed",
+      "error": "axes don't match array",
+      "timestamp": "2025-10-25T11:16:54.796280"
+    }
+  }
+}

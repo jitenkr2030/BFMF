@@ -1,0 +1,127 @@
+{
+  "memory_system": {
+    "System Creation": {
+      "status": "success",
+      "creation_time": 7.43865966796875e-05,
+      "timestamp": "2025-10-25T11:18:31.821499"
+    },
+    "Add Memory": {
+      "status": "success",
+      "memory_id": "mem_1761391111821860_0",
+      "timestamp": "2025-10-25T11:18:31.823935"
+    },
+    "Get Context": {
+      "status": "success",
+      "context_length": 1,
+      "timestamp": "2025-10-25T11:18:31.823993"
+    },
+    "Search Memories": {
+      "status": "success",
+      "results_count": 0,
+      "timestamp": "2025-10-25T11:18:31.824948"
+    }
+  },
+  "text_processing": {
+    "Processor Creation": {
+      "status": "success",
+      "creation_time": 0.0001232624053955078,
+      "timestamp": "2025-10-25T11:18:31.826220"
+    },
+    "Text Preprocessing 1": {
+      "status": "success",
+      "original_length": 29,
+      "processed_length": 29,
+      "test_time": 7.033348083496094e-05,
+      "timestamp": "2025-10-25T11:18:31.826298"
+    },
+    "Text Preprocessing 2": {
+      "status": "success",
+      "original_length": 32,
+      "processed_length": 32,
+      "test_time": 8.344650268554688e-06,
+      "timestamp": "2025-10-25T11:18:31.826311"
+    },
+    "Text Preprocessing 3": {
+      "status": "success",
+      "original_length": 44,
+      "processed_length": 44,
+      "test_time": 4.291534423828125e-06,
+      "timestamp": "2025-10-25T11:18:31.826318"
+    },
+    "Tokenization": {
+      "status": "success",
+      "test_time": 0.00032448768615722656,
+      "texts_processed": 3,
+      "avg_tokens_per_text": 512.0,
+      "timestamp": "2025-10-25T11:18:31.826647"
+    },
+    "Language Detection 1": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 9.298324584960938e-06,
+      "timestamp": "2025-10-25T11:18:31.826660"
+    },
+    "Language Detection 2": {
+      "status": "success",
+      "detected_language": "hi",
+      "test_time": 4.5299530029296875e-06,
+      "timestamp": "2025-10-25T11:18:31.826668"
+    },
+    "Language Detection 3": {
+      "status": "success",
+      "detected_language": "en",
+      "test_time": 7.867813110351562e-06,
+      "timestamp": "2025-10-25T11:18:31.826679"
+    }
+  },
+  "neural_networks": {
+    "Matrix Operations": {
+      "status": "success",
+      "input_shape": "(10, 64)",
+      "output_shape": "(10, 64)",
+      "test_time": 0.0006628036499023438,
+      "timestamp": "2025-10-25T11:18:31.827742"
+    },
+    "Text Processing Integration": {
+      "status": "success",
+      "original_text": "Hello world! This is a neural network test.",
+      "processed_text": "<UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>",
+      "tokens_count": 8,
+      "test_time": 1.8358230590820312e-05,
+      "timestamp": "2025-10-25T11:18:31.827768"
+    },
+    "Embedding Operations": {
+      "status": "success",
+      "embeddings_shape": "(8, 64)",
+      "test_time": 0.002207040786743164,
+      "timestamp": "2025-10-25T11:18:31.829993"
+    }
+  },
+  "integration": {
+    "Component Creation": {
+      "status": "success",
+      "creation_time": 0.00029587745666503906,
+      "components_created": [
+        "memory_system",
+        "text_processor"
+      ],
+      "timestamp": "2025-10-25T11:18:31.830320"
+    },
+    "Integrated Workflow": {
+      "status": "success",
+      "original_text": "Integration test for Bharat-FM components",
+      "processed_text": "integration test for bharat-fm components",
+      "memory_id": "mem_1761391111830526_0",
+      "context_entries": 1,
+      "workflow_time": 0.001672983169555664,
+      "timestamp": "2025-10-25T11:18:31.832000"
+    }
+  },
+  "test_summary": {
+    "timestamp": "2025-10-25T11:18:31.832059",
+    "memory_system_success": true,
+    "text_processing_success": true,
+    "neural_networks_success": true,
+    "integration_success": true
+  }
+}
