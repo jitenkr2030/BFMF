@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<defs>
+  <style type="text/css">
+    .bharat-gradient {
+      fill: url(#bharatGradient);
+    }
+    .ashoka-chakra {
+      fill: #000080;
+      animation: rotate 20s linear infinite;
+      transform-origin: center;
+    }
+    .tech-circuit {
+      fill: none;
+      stroke: #FF9933;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      opacity: 0.8;
+    }
+    .foundation-base {
+      fill: #138808;
+    }
+    .ai-core {
+      fill: #FFFFFF;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .sovereign-star {
+      fill: #FF9933;
+      animation: sparkle 3s ease-in-out infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+  </style>
+  
+  <linearGradient id="bharatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#FF9933;stop-opacity:1" />
+    <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#138808;stop-opacity:1" />
+  </linearGradient>
+</defs>
+
+<!-- Foundation Base (Strong, Reliable) -->
+<rect x="10" y="85" width="100" height="25" rx="3" class="foundation-base"/>
+<rect x="15" y="80" width="90" height="8" rx="2" fill="#000080"/>
+
+<!-- AI Core Circle -->
+<circle cx="60" cy="45" r="35" class="bharat-gradient"/>
+<circle cx="60" cy="45" r="30" fill="#FFFFFF" opacity="0.9"/>
+
+<!-- Ashoka Chakra (Indian Symbol) -->
+<g class="ashoka-chakra">
+  <circle cx="60" cy="45" r="18" fill="none" stroke="#000080" stroke-width="2"/>
+  <circle cx="60" cy="45" r="3" fill="#000080"/>
+  <!-- 24 spokes of Ashoka Chakra -->
+  <g>
+    <line x1="60" y1="27" x2="60" y2="33" stroke="#000080" stroke-width="1.5"/>
+    <line x1="60" y1="57" x2="60" y2="63" stroke="#000080" stroke-width="1.5"/>
+    <line x1="42" y1="45" x2="48" y2="45" stroke="#000080" stroke-width="1.5"/>
+    <line x1="72" y1="45" x2="78" y2="45" stroke="#000080" stroke-width="1.5"/>
+    <line x1="47.4" y1="32.4" x2="51.6" y2="36.6" stroke="#000080" stroke-width="1.5"/>
+    <line x1="68.4" y1="53.4" x2="72.6" y2="57.6" stroke="#000080" stroke-width="1.5"/>
+    <line x1="72.6" y1="32.4" x2="68.4" y2="36.6" stroke="#000080" stroke-width="1.5"/>
+    <line x1="51.6" y1="53.4" x2="47.4" y2="57.6" stroke="#000080" stroke-width="1.5"/>
+  </g>
+</g>
+
+<!-- Tech Circuit Pattern (AI/Technology) -->
+<path class="tech-circuit" d="M25,20 L35,20 L35,30 L45,30"/>
+<path class="tech-circuit" d="M95,20 L85,20 L85,30 L75,30"/>
+<path class="tech-circuit" d="M25,100 L35,100 L35,90 L45,90"/>
+<path class="tech-circuit" d="M95,100 L85,100 L85,90 L75,90"/>
+
+<!-- AI Core Elements -->
+<circle cx="60" cy="45" r="8" class="ai-core"/>
+<circle cx="55" cy="40" r="2" class="ai-core"/>
+<circle cx="65" cy="40" r="2" class="ai-core"/>
+<circle cx="55" cy="50" r="2" class="ai-core"/>
+<circle cx="65" cy="50" r="2" class="ai-core"/>
+
+<!-- Sovereign Stars -->
+<polygon points="30,15 32,21 38,21 33,25 35,31 30,27 25,31 27,25 22,21 28,21" class="sovereign-star"/>
+<polygon points="90,15 92,21 98,21 93,25 95,31 90,27 85,31 87,25 82,21 88,21" class="sovereign-star"/>
+
+<!-- Bharat Text -->
+<text x="60" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF">BFMF</text>
+
+</svg>

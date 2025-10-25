@@ -1,0 +1,212 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bharatfm"
+description = "India's Open-Source Ecosystem for Building, Training, and Deploying Foundation Models"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Bharat AI Team", email = "team@bharat.ai"}
+]
+maintainers = [
+    {name = "Bharat AI Team", email = "team@bharat.ai"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["ai", "machine-learning", "nlp", "foundation-models", "indian-languages", "bharat"]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "datasets>=2.12.0",
+    "tokenizers>=0.13.0",
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "tqdm>=4.62.0",
+    "pydantic>=2.0.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pathlib>=1.0.1",
+    "typing-extensions>=4.0.0",
+    # Domain-specific dependencies
+    "sacrebleu>=2.3.0",
+    "rouge-score>=0.1.2",
+    "bert-score>=0.3.0",
+    "torchvision>=0.15.0",
+    "accelerate>=0.20.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+    "isort>=5.12.0",
+]
+train = [
+    "accelerate>=0.20.0",
+    "deepspeed>=0.9.0",
+    "flash-attn>=2.0.0",
+    "wandb>=0.15.0",
+    "tensorboard>=2.13.0",
+]
+eval = [
+    "lm-eval>=0.4.0",
+    "rouge-score>=0.1.2",
+    "bert-score>=0.3.0",
+    "sacrebleu>=2.3.0",
+]
+deploy = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "vllm>=0.2.0",
+    "tritonclient[all]>=2.34.0",
+]
+registry = [
+    "mlflow>=2.5.0",
+    "huggingface-hub>=0.16.0",
+]
+all = [
+    "bharatfm[dev,train,eval,deploy,registry]"
+]
+
+[project.urls]
+Homepage = "https://github.com/bharat-ai/bharat-fm"
+Documentation = "https://bharat-ai.github.io/bharat-fm"
+Repository = "https://github.com/bharat-ai/bharat-fm"
+Issues = "https://github.com/bharat-ai/bharat-fm/issues"
+Discussions = "https://github.com/bharat-ai/bharat-fm/discussions"
+
+[project.scripts]
+bharat = "bharat_cli.main:main"
+
+[tool.setuptools]
+packages = ["bharat_data", "bharat_model", "bharat_train", "bharat_eval", "bharat_deploy", "bharat_registry", "bharat_cli", "bharat_domains"]
+
+[tool.setuptools.package-data]
+bharat_data = ["*.json", "*.txt"]
+bharat_model = ["*.json"]
+bharat_train = ["*.json"]
+bharat_eval = ["*.json"]
+bharat_deploy = ["*.json"]
+bharat_registry = ["*.json"]
+bharat_cli = ["*.json"]
+bharat_domains = ["*.json"]
+
+[tool.setuptools_scm]
+write_to = "bharatfm/_version.py"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=bharatfm",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+    "--cov-report=xml",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.coverage.run]
+source = ["bharatfm"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__init__.py",
+    "*/_version.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Logo Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .logo-display { margin: 20px 0; }
+        img { border: 1px solid #ddd; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Direct Logo Access Test</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Direct SVG Access</h2>
+        <div class="logo-display">
+            <img src="/logo.svg" alt="BFMF Logo" width="200" height="200">
+        </div>
+        <p>Direct access to /logo.svg</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Cache Busting</h2>
+        <div class="logo-display">
+            <img src="/logo.svg?v=$(date +%s)" alt="BFMF Logo Cache Busting" width="200" height="200">
+        </div>
+        <p>Access with cache busting parameter</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Favicon Test</h2>
+        <div class="logo-display">
+            <img src="/favicon.png" alt="BFMF Favicon" width="32" height="32">
+            <img src="/favicon.ico" alt="BFMF Favicon ICO" width="32" height="32">
+        </div>
+        <p>Favicon tests</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Open this page: http://127.0.0.1:3000/direct-logo-test.html</li>
+            <li>You should see the BFMF logo (with Ashoka Chakra) in all tests</li>
+            <li>If you see Z.ai logo, clear browser cache and refresh</li>
+            <li>Use Ctrl+F5 (Windows) or Cmd+Shift+R (Mac) for hard refresh</li>
+        </ol>
+    </div>
+</body>
+</html>
