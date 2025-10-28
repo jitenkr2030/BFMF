@@ -1,0 +1,20 @@
+[
+  {
+    "task_type": "classification",
+    "success": true,
+    "training_time": 0.0005347728729248047,
+    "test_accuracy": 0.35,
+    "best_model": "tree_based_model",
+    "models_evaluated": 3,
+    "error": null
+  },
+  {
+    "test_type": "feature_engineering",
+    "success": true,
+    "original_features": 4,
+    "processed_features": 4,
+    "missing_values_original": "Some",
+    "missing_values_processed": "None",
+    "error": null
+  }
+]

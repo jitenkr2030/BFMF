@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px;
+            background: #f5f5f5;
+        }
+        .logo-container {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bharat Foundation Model Framework - Logo Test</h1>
+    
+    <div class="logo-container">
+        <h2>Main Logo (SVG)</h2>
+        <img src="/logo.svg" alt="Bharat Foundation Model Framework Logo">
+        <p><strong>File:</strong> /logo.svg</p>
+    </div>
+    
+    <div class="logo-container">
+        <h2>Logo with Cache Busting</h2>
+        <img src="/logo.svg?v=2" alt="Bharat Foundation Model Framework Logo">
+        <p><strong>File:</strong> /logo.svg?v=2</p>
+    </div>
+    
+    <div class="logo-container">
+        <h2>Favicon (PNG)</h2>
+        <img src="/favicon.png" alt="Favicon">
+        <p><strong>File:</strong> /favicon.png</p>
+    </div>
+    
+    <div class="logo-container">
+        <h2>Favicon (ICO)</h2>
+        <img src="/favicon.ico" alt="Favicon">
+        <p><strong>File:</strong> /favicon.ico</p>
+    </div>
+</body>
+</html>

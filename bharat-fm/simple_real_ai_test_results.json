@@ -1,0 +1,86 @@
+{
+  "neural_networks": {
+    "Import Error": {
+      "status": "failed",
+      "error": "Missing dependency: No module named 'torch'",
+      "timestamp": "2025-10-25T11:06:51.213245"
+    }
+  },
+  "memory_system": {
+    "System Creation": {
+      "status": "success",
+      "creation_time": 7.343292236328125e-05,
+      "config": {
+        "max_memory_entries": 1000,
+        "max_context_length": 2048,
+        "memory_retention_days": 30
+      },
+      "timestamp": "2025-10-25T11:06:51.218131"
+    },
+    "Add Memory 1": {
+      "status": "success",
+      "memory_id": "mem_1761390411218511_0",
+      "test_time": 0.002600431442260742,
+      "timestamp": "2025-10-25T11:06:51.220845"
+    },
+    "Add Memory 2": {
+      "status": "success",
+      "memory_id": "mem_1761390411221081_1",
+      "test_time": 0.000728607177734375,
+      "timestamp": "2025-10-25T11:06:51.221684"
+    },
+    "Add Memory 3": {
+      "status": "success",
+      "memory_id": "mem_1761390411221892_2",
+      "test_time": 0.0006210803985595703,
+      "timestamp": "2025-10-25T11:06:51.222413"
+    },
+    "Add Memory 4": {
+      "status": "success",
+      "memory_id": "mem_1761390411222591_3",
+      "test_time": 0.0006215572357177734,
+      "timestamp": "2025-10-25T11:06:51.223118"
+    },
+    "Get Context": {
+      "status": "success",
+      "context_length": 4,
+      "test_time": 5.626678466796875e-05,
+      "timestamp": "2025-10-25T11:06:51.223321"
+    },
+    "Search Memories": {
+      "status": "success",
+      "results_count": 0,
+      "test_time": 0.0019402503967285156,
+      "timestamp": "2025-10-25T11:06:51.225407"
+    },
+    "User Profile": {
+      "status": "success",
+      "total_memories": 4,
+      "total_sessions": 1,
+      "test_time": 6.127357482910156e-05,
+      "timestamp": "2025-10-25T11:06:51.225649"
+    },
+    "Memory Stats": {
+      "status": "success",
+      "total_memories": 4,
+      "total_sessions": 1,
+      "total_users": 1,
+      "test_time": 4.887580871582031e-05,
+      "timestamp": "2025-10-25T11:06:51.225849"
+    }
+  },
+  "text_processing": {
+    "Import Error": {
+      "status": "failed",
+      "error": "Missing dependency: No module named 'transformers'",
+      "timestamp": "2025-10-25T11:06:51.226615"
+    }
+  },
+  "integration": {
+    "Import Error": {
+      "status": "failed",
+      "error": "Missing dependency: No module named 'torch'",
+      "timestamp": "2025-10-25T11:06:51.227095"
+    }
+  }
+}
