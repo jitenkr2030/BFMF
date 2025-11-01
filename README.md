@@ -1,53 +1,57 @@
-💠 Sponsor & Compute Partnership Program
+# Strategic Partnership Program for India's AI Sovereignty
 
-Join the movement to make Bharat AI-Self-Reliant.
+## Empowering India's AI Future Through Collaboration
 
-The Bharat Foundation Model Framework (BFMF) is a community-driven, open-source initiative that aims to build India’s own sovereign foundation models — trained on Indian data, built with open technologies, and deployable on Indian infrastructure.
+The Bharat Foundation Model Framework (BFMF) represents a landmark initiative in India's journey towards AI independence. As a strategic, community-driven open-source project, we are developing sovereign foundation models that are uniquely Indian - trained on our data, built with cutting-edge open technologies, and deployed on domestic infrastructure.
 
-To make this mission sustainable and scalable, we invite institutions, startups, cloud providers, universities, and individuals to sponsor or contribute compute, data, or financial support.
+To accelerate this national mission, we invite leading institutions, technology companies, research organizations, and visionary individuals to join us as strategic partners in building India's AI future.
 
-🤝 Ways to Support
-Type	How You Can Help	Examples
-💻 Compute Sponsorship	Provide GPU/TPU resources for training and fine-tuning Bharat models	ExoStack clusters, AWS/GCP credits, local GPU labs
-📊 Data Contribution	Share open datasets (multilingual, governance, legal, medical, etc.) for Indian domains	IndicCorp, government data, regional datasets
-🧠 Research Collaboration	Co-develop new model architectures, benchmarks, or LoRA fine-tunes	AI Institutes, Universities, Research Labs
-🏦 Financial Sponsorship	Fund compute operations, research teams, or dataset curation	Corporates, CSR programs, Venture or Public Grants
-🧑‍💻 Community Contributions	Code, documentation, benchmarking, and localization	Developers, students, and AI enthusiasts
-🌍 Sponsorship Benefits
+## Partnership Opportunities
 
-✅ Official Recognition: Listed as a compute or financial sponsor on the BFMF Sponsors Page
+| Category | Strategic Value | Partner Examples |
+|----------|----------------|------------------|
+| **Computing Infrastructure** | High-performance GPU/TPU clusters for model training and optimization | ExoStack, Cloud Providers, HPC Centers |
+| **Data Partnerships** | Curated datasets spanning Indian languages, domains, and use-cases | Research Institutions, Government Agencies |
+| **Research & Development** | Advanced model architectures and domain-specific innovations | AI Institutes, Universities, R&D Labs |
+| **Strategic Investment** | Sustainable funding for compute, talent, and infrastructure | Corporations, Investment Firms, Grants |
+| **Technical Ecosystem** | Engineering expertise, tools, and platform capabilities | Technology Companies, Developer Communities |
 
-🧩 Early Access: Preview new Bharat models and research releases before public availability
+## Partnership Benefits
 
-⚙️ Integration Rights: Collaborate on integrating BharatFM into institutional or enterprise systems
+### Strategic Advantages
+- **Priority Access**: Early preview and integration rights for new Bharat models
+- **Co-Innovation**: Joint R&D opportunities and technology collaboration
+- **Market Leadership**: First-mover advantage in India's emerging AI ecosystem
 
-🧠 Research Co-Branding: Joint publication opportunities with the Bharat AI Research community
+### Institutional Benefits
+- **Brand Recognition**: Featured placement on BFMF's partner ecosystem
+- **Technical Support**: Dedicated integration and optimization assistance
+- **Research Publications**: Co-authored papers and technical documentation
 
-🇮🇳 Contribute to India’s AI Independence: Help build a truly open, sovereign AI ecosystem
+## Current Strategic Requirements (Q4 2025)
 
-📬 Become a Sponsor
+| Resource | Scope | Strategic Impact |
+|----------|--------|------------------|
+| Computing Infrastructure | 16-32 NVIDIA A100/H100 GPUs | Enable Bharat-Base (7B) model training |
+| Storage Infrastructure | 50TB+ NVMe/Cloud Storage | Support dataset and model hosting |
+| Financial Resources | ₹10-20L Investment | Scale compute and research operations |
+| Research Partnerships | 5-10 Technical Partners | Drive model optimization and evaluation |
 
-Interested in supporting the Bharat Foundation Model Framework?
-Please reach out via:
+## Become a Strategic Partner
 
-📧 Email: sponsor@bharat-ai.org
+Join us in shaping India's AI future. Connect with our partnership team:
 
-💬 GitHub Discussion: Sponsor Inquiry Thread
+- **Email**: partnerships@bharat-ai.org
+- **Strategic Discussions**: [Partner Inquiry Portal](https://github.com/bharat-ai/partnerships)
+- **Partnership Portal**: https://bharat-ai.org/partners (launching soon)
 
-🌐 Website: https://bharat-ai.org/sponsor
- (coming soon)
+Our team will provide detailed information about partnership opportunities, technical requirements, and engagement frameworks.
 
-We’ll respond with our current compute requirements, collaboration proposal, and recognition program.
+---
 
-🔧 Current Needs (Q4 2025)
-Resource	Quantity	Purpose
-NVIDIA A100 / H100 GPUs	16–32	Pretraining Bharat-Base (7B) model
-Storage (NVMe / Cloud)	50TB+	Dataset and checkpoint hosting
-Financial Support	₹10–20L	Cover compute + infra costs
-Research Collaborators	5–10	Fine-tuning and evaluation partners
+> "Every partnership strengthens India's path to AI sovereignty. Together, we're not just adopting AI - we're defining its future with Indian innovation and values."
 
-🪔 Every GPU hour, every dataset, and every contribution brings Bharat closer to AI independence.
-Together, we can make India not just a user — but a creator — of world-class foundation models.
+Join us in building India's sovereign AI capabilities. The future of AI is being written in Bharat.
 
 # 🇮🇳 Bharat Foundation Model Framework (BFMF)
 
